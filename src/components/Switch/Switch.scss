@@ -1,0 +1,46 @@
+.Switch {
+    background: #fff;
+    border-radius: 25px;
+    display: flex;
+    border: 2px solid #fff;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    & span {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        border-radius: 25px;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+    }
+    &__part {
+        transition: all 0.3s ease-in-out;
+        padding: 10px 25px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        white-space: nowrap;
+        width: 100%;
+        & p {
+            
+        }
+        &-left {
+            color: #00B031;
+        }
+        &-right {
+            color: #F06D8D;
+        }
+    }
+    &__toggled {
+        background: #E4F3E8; 
+        transform: translateX(0);
+    }
+    &__nottoogled {
+        background: #FCE2E8; 
+        transform: translateX(100%);
+    }
+}
